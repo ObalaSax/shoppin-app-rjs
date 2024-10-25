@@ -1,5 +1,5 @@
 import "./ProductCard.css";
-import productData from "../../ProductData";
+import pic from "../../assets/5.jpg";
 
 function ProductCard(props) {
   return (
@@ -7,8 +7,12 @@ function ProductCard(props) {
       <div className="productCard-container">
         <img src={props.productImage} alt="Product Image" />
         <h3>{props.productName}</h3>
-        <p>{props.newPrice}</p>
-        <p>{props.oldPrice}</p>
+        <div className="product-newPrice">
+          <p>Now: {props.newPrice}</p>
+        </div>
+        <div className="product-oldPrice">
+          <p>Was: {props.oldPrice}</p>
+        </div>
         <button>Add to Cart</button>
       </div>
     </div>

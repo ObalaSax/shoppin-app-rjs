@@ -9,7 +9,6 @@ function HomePage() {
         {productData.map((item, i) => {
           return (
             <ProductCard
-              productData
               key={i}
               id={item.id}
               productName={item.productName}
