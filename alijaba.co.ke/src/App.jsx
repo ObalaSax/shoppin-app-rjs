@@ -1,21 +1,21 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import HomePage from "./Pages/HomePage";
-import Men from "./Pages/Men";
-import Women from "./Pages/Women";
-import Kids from "./Pages/Kids";
-import Brands from "./Pages/Brands";
-import SignIn from "./Pages/SignInSignUp";
-import Footer from "../src/Components/Footer";
-import NavBar from "./Components/NavBar";
-import Cart from "./Pages/Cart";
-import Product from "./Pages/Product";
+import HomePage from "./Pages/Home/HomePage";
+import Men from "./Pages/Men/Men";
+import Women from "./Pages/Women/Women";
+import Kids from "./Pages/Kids/Kids";
+import Brands from "./Pages/Brands/Brands";
+import SignIn from "./Pages/SignInSignUp/SignInSignUp";
+import Footer from "../src/Components/Footer/Footer";
+import NavBar from "./Components/NavBar/NavBar";
+import Cart from "./Pages/Cart/Cart";
+import Product from "./Pages/Products/Product";
 
 function App() {
   return (
     <BrowserRouter>
       <NavBar />
       <Routes>
-        <Route index path="/home" element={<HomePage />} />
+        <Route index path="/" element={<HomePage />} />
         <Route path="/men" element={<Men />} />
         <Route path="/women" element={<Women />} />
         <Route path="/kids" element={<Kids />} />

@@ -1,3 +1,4 @@
+import "./Brands.css";
 function Brands() {
   return (
     <div>
