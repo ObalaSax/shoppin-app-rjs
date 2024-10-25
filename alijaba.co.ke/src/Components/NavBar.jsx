@@ -1,42 +1,68 @@
-//import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { useState } from "react";
 import Logo from "../assets/Logo.png";
-import {
-  UserRoundPen,
-  ChevronDown,
-  ShoppingCart,
-  Layers,
-  Flag,
-} from "lucide-react";
-
+import { Link } from "react-router-dom";
 function NavBar() {
+  const [currentPath, setCurrentPath] = useState("/");
+
   return (
-    <div className="navbar">
-      <div className="layer1">
-        <img src={Logo} alt="Logo" />
-        <div className="nav-searchbar">
-          <input type="text" placeholder="What Are We Buying Today?" />
-          <button> Search</button>
+    <div className="navBar">
+      <div className="navBar-container">
+        <img src={Logo} alt="Alijaba Logo" />
+        <div className="navBar-links">
+          <ul>
+            <li
+              onClick={() => {
+                setCurrentPath("/home");
+              }}
+            >
+              <a href="/">Home {currentPath === "/home" ? <hr /> : <></>}</a>
+            </li>
+            <li
+              onClick={() => {
+                setCurrentPath("/men");
+              }}
+            >
+              <a href="/men">Men {currentPath === "/men" ? <hr /> : <></>}</a>
+            </li>
+            <li
+              onClick={() => {
+                setCurrentPath("/women");
+              }}
+            >
+              <a href="/women">
+                Women {currentPath === "/women" ? <hr /> : <></>}
+              </a>
+            </li>
+            <li
+              onClick={() => {
+                setCurrentPath("/kids");
+              }}
+            >
+              <a href="/kids">
+                Kids {currentPath === "/kids" ? <hr /> : <></>}
+              </a>
+            </li>
+            <li
+              onClick={() => {
+                setCurrentPath("/brands");
+              }}
+            >
+              <a href="/brands">
+                Brand {currentPath === "/brands" ? <hr /> : <></>}
+              </a>
+            </li>
+          </ul>
         </div>
-        <div className="dropdowns">
-          <div className="download">
-            <Layers color="#ffffff" />
-            <ChevronDown color="#ffffff" />
-          </div>
-          <div className="country">
-            <Flag color="#ffffff" />
-            <ChevronDown color="#ffffff" />
-          </div>
-          <div className="profile">
-            <UserRoundPen color="#ffffff" />
-            <ChevronDown color="#ffffff" />
-          </div>
-          <div className="cart-img">
-            <ShoppingCart color="#ffffff" />
-            <ChevronDown color="#ffffff" />
-          </div>
+        <div className="navBar-button">
+          <Link to="/signin">
+            <button> Login</button>
+          </Link>
+          <Link to="/cart">
+            <button> Cart Icon</button>
+          </Link>
         </div>
       </div>
-      <div className="layer2"></div>
+      <hr />
     </div>
   );
 }

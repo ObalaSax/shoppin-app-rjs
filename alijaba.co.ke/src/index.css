@@ -1,101 +1,204 @@
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
+/*----------NavBar----------*/
 
-.navbar {
-  width: 100%;
-  height: 150px;
-  background-color: black;
+.navBar {
+  padding: 10px;
 }
-
-.navbar .layer1 {
-  width: 100%;
-  height: 75px;
+.navBar-container {
   padding: 10px;
   display: flex;
+  justify-items: center;
+  justify-content: space-between;
   align-items: center;
 }
-
-.layer1 img {
-  width: 100px;
-  margin-right: 60px;
-}
-.layer1 .nav-searchbar {
-  background: white;
-  height: 60px;
-  width: 600px;
-  border-radius: 30px;
+.navBar-container img {
+  width: 170px;
 }
 
-.layer1 .nav-searchbar input {
-  height: 40px;
-  width: 510px;
-  padding-top: 20px;
-  padding-left: 15px;
-  font-size: 15px;
-  background: transparent;
+.navBar-links {
+  margin: 0px auto;
+}
+
+.navBar-links ul {
+  display: flex;
+}
+
+.navBar-links ul li {
+  display: flex;
+  list-style: none;
+  margin: 0px 10px 0px 10px;
+  padding: 20px;
+}
+
+.navBar-links ul li a {
+  text-decoration: none;
+  color: black;
+  transition: 0.5s ease-in-out;
+}
+
+.navBar-links ul li hr :hover {
+  width: 70px;
+
+  background-color: aqua;
+}
+
+.navBar-button {
+  margin: 0px 10px;
+}
+
+.navBar-button button {
+  margin: 0px 10px 0px 10px;
+  padding: 5px;
+  color: black;
+  border: 1px solid;
   border-radius: 20px;
-  border: 0;
+  width: 80px;
+  height: 40px;
+  background: transparent;
+  transition: 1s ease;
+}
+.navBar-button button:hover {
+  transform: scale(1.05);
+}
+.navBar-button button:active {
+  transform: scale(0.9);
+}
+
+/*----------NAVBAR----------*/
+
+/*----------FOOTER----------*/
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #8f8f8f;
+  padding: 10px;
+  color: white;
+}
+
+.footer-container {
+  max-width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+.footer-contacts {
+  max-width: 400px;
+  padding: 10px;
+}
+
+.footer-contacts ul {
+  padding: 10px;
+}
+
+.footer-contacts ul li {
+  list-style: none;
+  padding: 5px;
+  margin: 5px;
+}
+
+.footer-contacts ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.footer-contacts ul li a:hover {
+  color: blue;
+}
+.footer-information {
+  max-width: 400px;
+  padding: 10px;
+}
+
+.footer-information ul {
+  padding: 10px;
+}
+.footer-information ul li {
+  list-style: none;
+  padding: 5px;
+  margin: 5px;
+}
+.footer-information ul li {
+}
+.footer-usefulLinks {
+  padding: 10px;
+  max-width: 400px;
+}
+.footer-usefulLinks ul {
+  padding: 10px;
+}
+.footer-usefulLinks ul li {
+  list-style: none;
+  padding: 5px;
+  margin: 5px;
+}
+.footer-usefulLinks ul li a {
+  text-decoration: none;
+  color: white;
+}
+.footer-usefulLinks ul li a:hover {
+  color: blue;
+}
+
+.footer-NewsLetter {
+  padding: 10px;
+  height: 100%;
+}
+.footer-NewsLetter p {
+  padding: 10px;
+}
+.footer-newsLetter-buttons {
+  width: 100%;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.footer-NewsLetter input {
+  height: 100%;
+  width: 80%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
   outline: none;
 }
 
-.layer1 .nav-searchbar button {
-  height: 40px;
-  font-size: larger;
-  width: 80px;
-  border-radius: 20px;
-  border: 0;
-  background: hsl(34, 100%, 50%);
+.footer-NewsLetter button {
+  width: 20%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  font-weight: 400;
+  border: none;
+  transition: 0.2s all ease-in;
+}
+.footer-NewsLetter button:hover {
+  transform: scale(1.02);
 }
 
-.layer1 .nav-searchbar button:hover {
-  transform: scale(1.1);
-  background: hsl(34, 95%, 64%);
-}
-.layer1 .nav-searchbar button:active {
-  transform: scale(1);
-  background: hsl(34, 100%, 82%);
+.footer-NewsLetter button:active {
+  transform: scale(0.8);
 }
 
-.dropdowns {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 20px;
-  margin-left: 100px;
-}
-.dropdowns .download {
-  margin-right: 40px;
-}
-
-.dropdowns .country {
-  margin-right: 40px;
-}
-
-.dropdowns .profile {
-  margin-right: 40px;
-}
-
-.dropdowns .cart-img {
-  margin-right: 40px;
-}
-
-/*<<<<<<<<<<<<<<<<LAYER ONE DONE>>>>>>>>>>>>>>>>>>>>>>>>*/
-.navbar .layer2 {
+.footer-copyrights {
+  background-color: white;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
   width: 100%;
-  height: 75px;
-  background: blue;
+  height: 25px;
+  padding: 10px auto;
+  margin: 10px auto;
+  bottom: 0;
+  left: 0;
 }
 
-/*<<<<<<<<<<<<<<<<PRODUCT CARD>>>>>>>>>>>>>>>>>>>>>>>>*/
-.product-cards {
-  border: 10px;
-  border-color: black;
-  width: 100px;
-  height: 300px;
-  display: inline-block;
-  margin: 20px auto 20px;
-}
-
-/*<<<<<<<<<<<<<<<<PRODUCT CARD END>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*----------FOOTER----------*/
