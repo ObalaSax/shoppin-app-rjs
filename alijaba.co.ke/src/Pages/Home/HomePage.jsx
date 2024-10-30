@@ -5,7 +5,6 @@ function HomePage() {
   return (
     <div>
       <div className="home-productItem">
-        <h1>Home Page</h1>
         {productData.map((item, i) => {
           return (
             <ProductCard

@@ -42,4 +42,14 @@ let productData = [
   },
 ];
 
-export default productData;
+let userDetails = [
+  {
+    id: 1,
+    userName: "ObalaSax",
+    pass: 123456,
+  },
+  { id: 2, userName: "ObalaSax", pass: 123456 },
+  { id: 3, userName: "newGuy", pass: 123456 },
+  { id: 4, userName: "oldGuy", pass: 123456 },
+];
+export default { productData, userDetails };
