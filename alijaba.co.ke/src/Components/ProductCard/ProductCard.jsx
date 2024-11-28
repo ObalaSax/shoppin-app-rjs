@@ -1,5 +1,4 @@
 import "./ProductCard.css";
-import pic from "../../assets/5.jpg";
 
 function ProductCard(props) {
   return (

@@ -4,7 +4,7 @@ import p3 from "./assets/4.jpg";
 import p4 from "./assets/5.jpg";
 import p5 from "./assets/toy.jpg";
 
-let productData = [
+let product = [
   {
     id: 1,
     productName: "T-Shirt",
@@ -52,4 +52,4 @@ let userDetails = [
   { id: 3, userName: "newGuy", pass: 123456 },
   { id: 4, userName: "oldGuy", pass: 123456 },
 ];
-export default { productData, userDetails };
+export default { product, userDetails };

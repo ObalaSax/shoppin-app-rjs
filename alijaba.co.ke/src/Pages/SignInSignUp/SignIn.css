@@ -1,0 +1,66 @@
+.signIn{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.signIn-container{
+    width: 540px;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+form{
+padding: auto;    
+}
+
+form .signIn-inputs{
+    display: flex;
+    padding: 5px;
+}
+
+form .signIn-inputs label{
+    width: 100px;
+    margin:10px;
+}
+
+form .signIn-inputs input{
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    border: 0.5px solid;
+    border-radius: 5px;
+    outline: none;
+
+}
+
+.signIn-btn p{
+}
+
+form .the-btn{
+    background: orange;
+    margin: 20px auto;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+form .the-btn:hover{
+    transform: scale(1.005);
+    box-shadow: 0.5px 0.5px 10px black;
+    background:linear-gradient(90deg, orange, purple);
+
+}
+
+form .the-btn:active{
+    transform: scale(.95);
+
+}
